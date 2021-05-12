@@ -1,5 +1,4 @@
 package tudelft.roman;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -32,5 +31,12 @@ public class RomanNumeralTest {
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
+    }
+
+    @Test
+    public void numberFiftyFour(){
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("LIV");
+        Assertions.assertEquals(54,result);
     }
 }
